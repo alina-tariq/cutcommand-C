@@ -1,1 +1,2 @@
-Simplified Cut Command Recreated in C
+Simplified Cut Command
+Recreated in C
