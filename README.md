@@ -36,7 +36,7 @@ For example:
 ```
 ./cutcmd . ! 2 8 11 15
 ```
-or to send a file to stdin:
+or
 ```
 ./cutcmd . ! 2 8 11 15 <inFile
 ```
