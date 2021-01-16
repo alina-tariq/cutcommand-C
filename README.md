@@ -30,7 +30,7 @@ gcc -o cutcmd cutcmd.c cutcmdfuncs.c
 ```
 
 To run the executable, the following format is needed:
-* executable <input_delimiter> <output_delimiter> <field1> <field2> <field3> ... <field n>
+* executable <input_delimiter> <output_delimiter> field1 field2 field3 ... field n
 
 For example:
 ```
