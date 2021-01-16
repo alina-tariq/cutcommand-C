@@ -44,9 +44,18 @@ int ValidArgs(int argc, char *argv[], int MaxAllowed)
     ++count;
   }
 
+  int numOfDigits = 1;
   for (i = 4; i < argc; i++)
   {
     next = atoi(argv[i]);
+    if (next > 99)
+    {
+      numOfDigits = 3;
+    }
+    else if (next > 9)
+    {
+      numOfDigits = 2;
+    }
 
     if (curr < 1 || next < 1)
     {
@@ -66,7 +75,7 @@ int ValidArgs(int argc, char *argv[], int MaxAllowed)
       // while having a mix of numeric and non-numeric chars
       return 1;
     }
-    else if (strlen(argv[i]) != (1 + (int)log10(next)))
+    else if (strlen(argv[i]) != numOfDigits)
     {
       // invalidates arguments that bypass atoi by having a
       // mix of numeric and non-numeric chars
