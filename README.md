@@ -12,7 +12,7 @@
 - No cut command flags/options are supported
 - Input can be provided using either stdin or through a file passed to stdin
 
-##How To Use
+## How To Use
 Use the following commands to copy the program:
 ```
 git clone https://github.com/alina-tariq/cutcommand-C.git
